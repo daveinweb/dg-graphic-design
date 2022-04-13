@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+}
+
+
+.container-2k {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0428/3357/6102/files/bg.jpg?v=1649878896');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.circle{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 90px solid #cc1131;
+  transform: translate(50%) ease-in-out;
+  transition: all 150ms ease-in-out;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.sku-title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+}
