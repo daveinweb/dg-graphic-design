@@ -1,30 +1,93 @@
-body{
-  margin: 0;
+img-prod {
+    position: fixed;
+    top: -5%;
+    left: 0%;
+    border-radius: 50px;
+    opacity: 0.9;
+    transition: all 0.5s ease-out;
+}
+
+.h1-title {
+    transition: transform 2s;
+    font-size: 60px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card:hover >p {
+    opacity: 1;
+    transform: scale(1.5); 
+    top: 80%;
+}
+
+/* img:hover .card {} */
+
+img,
+#parent {
+    cursor: pointer;
+}
+
+.card:hover>img {
+    opacity: 1;
+    transform: scale(1.4);
+    transition: all 0.5s ease-out;
+}
+
+.card header {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    padding: 1px;
+    border-radius: 25px;
+    width: 450px;
+    height: 90px;
+    transition: all .5s;
+    opacity: 0;
 }
 
 
-.container-2k {
-  width: 100vw;
-  height: 100vh;
-  background-image: url('https://cdn.shopify.com/s/files/1/0428/3357/6102/files/bg.jpg?v=1649878896');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.card {
+    transition: transform .7s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background: white;
+    width: 300px;
+    height: 300px;
 }
 
-.circle{
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  border: 90px solid #cc1131;
-  transform: translate(50%) ease-in-out;
-  transition: all 150ms ease-in-out;
-  vertical-align:middle;
-  text-align:center;
+.card:hover {
+    transform: scale(1.02);
+    background-image: url('https://cdn.shopify.com/s/files/1/0428/3357/6102/files/liquid-bg-blk.png?v=1650650050');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 400ms ease-out;
 }
 
-.sku-title{
-  font-family: 'Roboto', sans-serif;
-  font-size: 80px;
-  font-weight: bold;
+.centeri {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    position: relative;
+}
+
+.black{
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%
+  }
+
+  #a:hover + #b {
+    background: #ccc;
 }
