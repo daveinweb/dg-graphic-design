@@ -10,18 +10,28 @@
 </head>
   <body>
     <div class="centeri">
-      <div id="card" class="card">
-        <img 
-          class="img-prod" 
-          src="https://cdn.shopify.com/s/files/1/0428/3357/6102/files/nigga.png?v=1650649483" 
-          class="foto" 
-          style="width:100%">
-        </div>
+      <div id="circle">
+        <img src="https://cdn.shopify.com/s/files/1/0428/3357/6102/files/nigga.png?v=1650649483">
       </div>
+    </div>
 
-      <div id="black" class="black"></div>
-
-      <div id="a">Div A</div>
-      <div id="b">Div B</div>
+        <div id="mostrar"></div>
+     
+    <script>
+    let imagenes = document.getElementsByTagName("img");
+    for (let i = 0; i<imagenes.length; ++i)
+        {
+     
+        // Creamos el evento mouseover para cada imagen
+        imagenes[i].addEventListener("mouseover", function(e){
+            document.getElementById("mostrar").style.backgroundImage="url('"+e.target.currentSrc+"')";
+        });
+     
+        // Creamos el evento mouseout para cada imagen
+        imagenes[i].addEventListener("mouseout", function(e){
+            document.getElementById("mostrar").style.backgroundImage="";
+        });
+    }
+    </script>
  </body>
 </html>
